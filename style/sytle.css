@@ -39,30 +39,55 @@ select:focus {
     font-size: 16px;
 }
 
-input:focus {
+/* input:focus {
+    border: 1px solid #10a37f;
+} */
+
+.login-input-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.label-text {
+    position: absolute;
+    left: 21px;
+    top: 43px;
+    color: rgb(118, 113, 113);
+}
+
+.input-text:hover {
+    cursor: text;
+}
+
+.on-input-focus {
+    position: absolute;
+    left: 9px;
+    top: 18px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #12af88;
+    padding-left: 6px;
+    padding-right: 6px;
+    transition: .2s;
+}
+
+.border-color {
     border: 1px solid #10a37f;
 }
 
-
-input:focus::placeholder {
-    position: absolute;
-    font-size: 14px;
-    color: #12af88;
-    transform: translateY(-155%);
-    transition: transform 0.2s ease;
-    z-index: 2;
+.error-border-color {
+    border: 1px solid rgb(208, 14, 23);;
 }
 
-input::placeholder {
-    font-size: 16px;
+.error-text-color {
+    color: rgb(208, 14, 23);
 }
 
-.place-holder-text-container {
-    font-size: 16px;
-    position: absolute;
-    top: 42px;
-    left: 21px;
-    color: rgb(118, 111, 111);
+
+.oauth-btn {
+    padding: 0;
+    left: 0;
 }
 
 .login-button {
@@ -126,6 +151,8 @@ hr {
     height: 52px;
     font-size: 16px;
     padding-left: 40px;
+    padding-left: 65px;
+    text-align: left;
 }
 
 .btn-apple:hover,

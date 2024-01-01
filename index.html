@@ -21,40 +21,61 @@
                 Welcome back
             </div>
             <div class="login-input-container">
-                <input class="login-input" type="text" name="" id="" placeholder="Email address">
+                <div class="label-text" id="input-text-label">
+                    <label id="" onclick="focusInput()" class="input-text" for="">Email address</label>
+                </div>
+                <input class="login-input" type="text" name="login-input-field" id="login-input-field">
             </div>
             <div class="login-button-container">
-                <button class="login-button">Continue</button>
+                <button onclick="validateEmailAddress()" class="login-button">Continue</button>
             </div>
             <div class="signup-text-container">
                 <p class="alert-text">Don't have an account?</p>
                 <a class="signup-link" href="">Sign up</a>
             </div>
             <div class="oauth-login-split">
-                <div><hr></div>
+                <div>
+                    <hr>
+                </div>
                 <div>OR</div>
-                <div><hr></div>
+                <div>
+                    <hr>
+                </div>
             </div>
             <div class="oauth-login-container">
                 <div class="google-login">
-                    <button class="btn-google">Continue with Google</button>
-                    <img src="./images/logo/google.png" alt="" class="img-google">
+                    <div class="oauth-btn">
+                        <button class="btn-google">Continue with Google</button>
+                    </div>
+                    <div>
+                        <img src="./images/logo/google.png" alt="" class="img-google">
+                    </div>
                 </div>
                 <div class="microsoft-login">
-                    <button class="btn-microsoft">
-                        Continue with Microsoft Account
-                    </button>
-                    <img src="./images/logo/microsoft.png" alt="" class="img-microsoft">
+                    <div class="oauth-btn">
+                        <button class="btn-microsoft">
+                            Continue with Microsoft Account
+                        </button>
+                    </div>
+                    <div>
+                        <img src="./images/logo/microsoft.png" alt="" class="img-microsoft">
+                    </div>
                 </div>
                 <div class="apple-login">
-                    <button class="btn-apple">
-                        Continue with Apple
-                    </button>
-                    <img src="./images/logo/apple.png" alt="" class="img-apple">
+                    <div class="oauth-btn">
+                        <button class="btn-apple">
+                            Continue with Apple
+                        </button>
+                    </div>
+                    <div>
+                        <img src="./images/logo/apple.png" alt="" class="img-apple">
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="./script/index.js"></script>
 </body>
 
 </html>
