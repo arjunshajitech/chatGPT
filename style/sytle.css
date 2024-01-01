@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 750px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+.login-container {
+    font-family: Söhne, -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-icon {
+    width: 75px;
+    margin-top: 27px;
+}
+
+.login-text-container {
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 140px;
+}
+
+.login-input {
+    margin-top: 25px;
+    width: 300px;
+    height: 50px;
+    border: 1px solid rgb(198, 194, 194);
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+input:focus {
+    border: 1px solid #10a37f;
+}
+
+
+input:focus::placeholder {
+    position: absolute;
+    font-size: 14px;
+    color: #12af88;
+    transform: translateY(-155%);
+    transition: transform 0.2s ease;
+    z-index: 2;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+.place-holder-text-container {
+    font-size: 16px;
+    position: absolute;
+    top: 42px;
+    left: 21px;
+    color: rgb(118, 111, 111);
+}
+
+.login-button {
+    cursor: pointer;
+    background-color: #12af88;
+    color: #fff;
+    border-radius: 5px;
+    width: 320px;
+    height: 52px;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.login-button:hover {
+    background-color: #10a37f;
+}
+
+.signup-text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert-text {
+    font-size: 15px;
+    margin-right: 8px;
+    color: #3a3939;
+}
+
+.signup-link {
+    font-size: 15px;
+    text-decoration: none;
+    color: #12af88;
+}
+
+.oauth-login-split {
+    margin-top: 10px;
+    display: flex;
+    column-gap: 10px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+hr {
+    width: 140px;
+    background-color: rgb(198, 194, 194);
+}
+
+.btn-google,
+.btn-apple,
+.btn-microsoft {
+    margin-bottom: 7px;
+    border: 1px solid rgb(198, 194, 194);
+    cursor: pointer;
+    background-color: #fff;
+    color: #111;
+    border-radius: 5px;
+    width: 320px;
+    height: 52px;
+    font-size: 16px;
+    padding-left: 40px;
+}
+
+.btn-apple:hover,
+.btn-google:hover,
+.btn-microsoft:hover {
+    background-color: rgb(244, 237, 237);
+}
+
+.google-login,
+.microsoft-login,
+.apple-login,
+.login-input-container {
+    position: relative;
+}
+
+.img-google {
+    width: 35px;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.img-microsoft {
+    width: 23px;
+    position: absolute;
+    left: 22px;
+    top: 14px;
+    cursor: pointer;
+}
+
+.img-apple {
+    width: 45px;
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    cursor: pointer;
+}
